@@ -2,30 +2,22 @@
 package org.jointheleague.api.derek.CrimeSearch.repository.dto;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Result {
+public class CoverArt {
 
-    private String query;
-    private Albums albums;
+    private List<Source> sources = null;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public String getQuery() {
-        return query;
+    public List<Source> getSources() {
+        return sources;
     }
 
-    public void setQuery(String query) {
-        this.query = query;
-    }
-
-    public Albums getAlbums() {
-        return albums;
-    }
-
-    public void setAlbums(Albums albums) {
-        this.albums = albums;
+    public void setSources(List<Source> sources) {
+        this.sources = sources;
     }
 
     public Map<String, Object> getAdditionalProperties() {

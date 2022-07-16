@@ -6,26 +6,26 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Result {
+public class PagingInfo {
 
-    private String query;
-    private Albums albums;
+    private Object nextOffset;
+    private Integer limit;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public String getQuery() {
-        return query;
+    public Object getNextOffset() {
+        return nextOffset;
     }
 
-    public void setQuery(String query) {
-        this.query = query;
+    public void setNextOffset(Object nextOffset) {
+        this.nextOffset = nextOffset;
     }
 
-    public Albums getAlbums() {
-        return albums;
+    public Integer getLimit() {
+        return limit;
     }
 
-    public void setAlbums(Albums albums) {
-        this.albums = albums;
+    public void setLimit(Integer limit) {
+        this.limit = limit;
     }
 
     public Map<String, Object> getAdditionalProperties() {

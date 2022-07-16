@@ -6,26 +6,17 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Result {
+public class Item {
 
-    private String query;
-    private Albums albums;
+    private Data data;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public String getQuery() {
-        return query;
+    public Data getData() {
+        return data;
     }
 
-    public void setQuery(String query) {
-        this.query = query;
-    }
-
-    public Albums getAlbums() {
-        return albums;
-    }
-
-    public void setAlbums(Albums albums) {
-        this.albums = albums;
+    public void setData(Data data) {
+        this.data = data;
     }
 
     public Map<String, Object> getAdditionalProperties() {

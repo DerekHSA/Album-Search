@@ -2,7 +2,6 @@ package org.jointheleague.api.derek.CrimeSearch.service;
 
 
 import org.jointheleague.api.derek.CrimeSearch.config.LocController;
-import org.jointheleague.api.derek.CrimeSearch.repository.dto.Result;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
