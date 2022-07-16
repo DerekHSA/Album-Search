@@ -1,6 +1,7 @@
 package org.jointheleague.api.derek.CrimeSearch.presentation;
 
 import org.jointheleague.api.derek.CrimeSearch.config.LocController;
+import org.jointheleague.api.derek.CrimeSearch.repository.dto.Result;
 import org.jointheleague.api.derek.CrimeSearch.service.LocService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

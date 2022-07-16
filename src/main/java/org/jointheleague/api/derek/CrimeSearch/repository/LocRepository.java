@@ -13,25 +13,26 @@ public class LocRepository {
 
     private final WebClient webClient;
 
-    private static final String baseUrl = "https://www.loc.gov/books";
+    private static final String baseUrl = "https://spotify23.p.rapidapi.com/search/";
 
     public LocRepository() {
         webClient = WebClient
                 .builder()
+                .defaultHeader("X-RapidAPI-Key", "c71032320emsh67e557f2b286035p11416fjsnf31ce36c260b")
+                .defaultHeader("X-RapidAPI-Host", "spotify23.p.rapidapi.com")
                 .baseUrl(baseUrl)
                 .build();
     }
 
-    public LocRepository(WebClient webClientMock) {
+    /*public LocRepository(WebClient webClientMock) {
         this.webClient = webClientMock;
-    }
+    } */
 
     public List<Result> getResults(String query) {
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
-                        .queryParam("fo", "json")
-                        .queryParam("at", "results")
                         .queryParam("q", query)
+                        .queryParam("type", "albums")
                         .build()
                 ).retrieve()
                 .bodyToMono(LocResponse.class)

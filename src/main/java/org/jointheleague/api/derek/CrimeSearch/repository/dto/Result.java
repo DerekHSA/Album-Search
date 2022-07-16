@@ -10,6 +10,7 @@ public class Result {
 
     private String query;
     private Albums albums;
+    private ResultData resultData;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public String getQuery() {
