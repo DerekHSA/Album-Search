@@ -1,4 +1,4 @@
-package org.jointheleague.api.derek.CrimeSearch.config;
+package org.jointheleague.api.derek.AlbumSearch.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,11 +18,11 @@ public class ApiDocConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Level 7 Cheetah Search",
-                "League of Amazing Programmers Level 7 Cheetah Search",
+                "Album Search",
+                "Derek Arce; Album Search",
                 "1.0.0",
                 null,
-                new Contact("Matt Freedman", "www.jointheleague.org", "matt.freedman@jointheleague.org"),
+                new Contact("Derek Arce", "", "DerekHSA@gmail.com"),
                 null, null, Collections.emptyList());
     }
 

@@ -1,7 +1,8 @@
-package org.jointheleague.api.derek.CrimeSearch.service;
+package org.jointheleague.api.derek.AlbumSearch.service;
 
 
-import org.jointheleague.api.derek.CrimeSearch.config.LocController;
+import org.jointheleague.api.derek.AlbumSearch.config.SpotifyController;
+import org.jointheleague.api.derek.AlbumSearch.repository.dto.Result;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -14,18 +15,18 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
-class LocControllerTest {
+class SpotifyControllerTest {
 
-    private LocController locController;
+    private SpotifyController spotifyController;
 
     @Mock
-    private LocService locService;
+    private SpotifyService spotifyService;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
 
-        locController = new LocController(locService);
+        spotifyController = new SpotifyController(spotifyService);
     }
 
     @Test
@@ -38,11 +39,11 @@ class LocControllerTest {
         result.setAuthors(Collections.singletonList("AUTHORS"));
         List<Result> expectedResults = Collections.singletonList(result);
 
-        when(locService.getResults(query))
+        when(spotifyService.getResults(query))
                 .thenReturn(expectedResults);
 
         //when
-        List<Result> actualResults = locController.getResults(query);
+        List<Result> actualResults = spotifyController.getResults(query);
 
         //then
         assertEquals(expectedResults, actualResults);
@@ -55,7 +56,7 @@ class LocControllerTest {
 
         //when
         //then
-        Throwable exceptionThrown = assertThrows(ResponseStatusException.class, () -> locController.getResults(query));
+        Throwable exceptionThrown = assertThrows(ResponseStatusException.class, () -> spotifyController.getResults(query));
         assertEquals(exceptionThrown.getMessage(), "404 NOT_FOUND \"Result(s) not found.\"");
     }
 

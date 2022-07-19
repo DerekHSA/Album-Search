@@ -1,8 +1,6 @@
 
-package org.jointheleague.api.derek.CrimeSearch.repository.dto;
+package org.jointheleague.api.derek.AlbumSearch.repository.dto;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
@@ -11,7 +9,6 @@ public class Source {
     private String url;
     private Integer width;
     private Integer height;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public String getUrl() {
         return url;
@@ -37,12 +34,12 @@ public class Source {
         this.height = height;
     }
 
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
+    @Override
+    public String toString() {
+        return "Source{" +
+                "url='" + url + '\'' +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
     }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
 }

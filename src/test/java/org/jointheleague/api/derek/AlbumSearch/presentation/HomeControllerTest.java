@@ -1,6 +1,6 @@
-package org.jointheleague.api.derek.CrimeSearch.presentation;
+package org.jointheleague.api.derek.AlbumSearch.presentation;
 
-import org.jointheleague.api.derek.CrimeSearch.HomeController;
+import org.jointheleague.api.derek.AlbumSearch.HomeController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

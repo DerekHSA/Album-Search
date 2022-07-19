@@ -1,5 +1,8 @@
-package org.jointheleague.api.derek.CrimeSearch.repository;
+/*package org.jointheleague.api.derek.CrimeSearch.repository;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import org.jointheleague.api.derek.CrimeSearch.repository.dto.LocResponse;
+import org.jointheleague.api.derek.CrimeSearch.repository.dto.Result;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -73,4 +76,4 @@ class LocRepositoryTest {
         assertEquals(expectedResults, actualLocResults);
     }
 
-}
+} */

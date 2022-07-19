@@ -1,4 +1,4 @@
-package org.jointheleague.api.derek.CrimeSearch;
+package org.jointheleague.api.derek.AlbumSearch;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;

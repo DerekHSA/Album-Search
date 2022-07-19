@@ -1,13 +1,13 @@
-package org.jointheleague.api.derek.CrimeSearch;
+package org.jointheleague.api.derek.AlbumSearch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrimeSearchApplication {
+public class AlbumSearchApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrimeSearchApplication.class, args);
+		SpringApplication.run(AlbumSearchApplication.class, args);
 	}
 
 }
